@@ -3,161 +3,200 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Revo Coffee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revo Coffee</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="page">
 
-<header>
-<div>
-<img src="assets/LOGO.png" alt="Логотип Revo Coffee">
-</div>
+  <header class="header">
+    <div class="header__inner container">
+      <div class="header__logo">
+        <img src="assets/LOGO.png" alt="Логотип Revo Coffee">
+      </div>
 
-<nav>
-<ul>
-<li><a href="#hero">Главная</a></li>
-<li><a href="#favorite">Кофе</a></li>
-<li><a href="#base">Основы вкуса</a></li>
-<li><a href="#combo">Комбо-наборы</a></li>
-<li><a href="#giftset">Подарочные наборы</a></li>
-<li><a href="#contact">Контакты</a></li>
-</ul>
-</nav>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link" href="#hero">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#favorite">Кофе</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#base">Основы вкуса</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#combo">Комбо-наборы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#giftset">Подарочные наборы</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-<section id="hero">
-<h1>Кофе, который подходит именно вам</h1>
-<p>
-Этот текст является демонстрационной заглушкой и&nbsp;используется для проверки
-структуры страницы. Представьте здесь краткое описание сервиса, пары предложений
-о&nbsp;бренде и&nbsp;основной идее проекта.
-</p>
-</section>
-</header>
+    <section class="hero" id="hero">
+      <div class="hero__inner container">
+        <h1 class="hero__title">Кофе, который подходит именно вам</h1>
+        <p class="hero__text">
+          Этот текст является демонстрационной заглушкой и&nbsp;используется для проверки
+          структуры страницы. Представьте здесь краткое описание сервиса, пары предложений
+          о&nbsp;бренде и&nbsp;основной идее проекта.
+        </p>
+        <a class="hero__button button" href="#favorite">Выбрать кофе</a>
+      </div>
+    </section>
+  </header>
 
-<main>
+  <main class="main">
 
-<section id="base">
-<h2>Создайте свою кофейную базу</h2>
+    <section class="section base" id="base">
+      <div class="section__inner container">
+        <h2 class="section__title">Создайте свою кофейную базу</h2>
 
-<article>
-<h3>Происхождение</h3>
-<p>
-Здесь может быть текст о&nbsp;регионах произрастания кофе, особенностях климата
-и&nbsp;влиянии высоты над уровнем моря на&nbsp;вкус напитка. Это демонстрационная
-текст-рыба для заполнения макета.
-</p>
-</article>
+        <div class="base__grid">
+          <article class="card">
+            <h3 class="card__title">Происхождение</h3>
+            <p class="card__text">
+              Здесь может быть текст о&nbsp;регионах произрастания кофе, особенностях климата
+              и&nbsp;влиянии высоты над уровнем моря на&nbsp;вкус напитка. Это демонстрационная
+              текст-рыба для заполнения макета.
+            </p>
+          </article>
 
-<article>
-<h3>Качество обжарки</h3>
-<p>
-В&nbsp;этом блоке обычно рассказывают о&nbsp;способах обжарки, контроле температуры
-и&nbsp;важности стабильного вкуса. Текст служит примером наполнения контентом.
-</p>
-</article>
+          <article class="card">
+            <h3 class="card__title">Качество обжарки</h3>
+            <p class="card__text">
+              В&nbsp;этом блоке обычно рассказывают о&nbsp;способах обжарки, контроле температуры
+              и&nbsp;важности стабильного вкуса. Текст служит примером наполнения контентом.
+            </p>
+          </article>
 
-<article>
-<h3>Разнообразие сортов</h3>
-<p>
-Здесь можно описать различия между арабикой и&nbsp;робустой, их&nbsp;сочетаниями и
-вариантами купажирования. Этот абзац имитирует реальное описание продукта.
-</p>
-</article>
+          <article class="card">
+            <h3 class="card__title">Разнообразие сортов</h3>
+            <p class="card__text">
+              Здесь можно описать различия между арабикой и&nbsp;робустой, их&nbsp;сочетаниями и
+              вариантами купажирования. Этот абзац имитирует реальное описание продукта.
+            </p>
+          </article>
 
-<article>
-<h3>Способы приготовления</h3>
-<p>
-В&nbsp;этом блоке обычно указывают рекомендуемые способы заваривания: турка,
-френч-пресс, воронка или кофемашина. Текст используется как пример рыбы.
-</p>
-</article>
-</section>
+          <article class="card">
+            <h3 class="card__title">Способы приготовления</h3>
+            <p class="card__text">
+              В&nbsp;этом блоке обычно указывают рекомендуемые способы заваривания: турка,
+              френч-пресс, воронка или кофемашина. Текст используется как пример рыбы.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section id="favorite">
-<h2>Выберите свой любимый кофе</h2>
+    <section class="section favorite" id="favorite">
+      <div class="section__inner container">
+        <h2 class="section__title">Выберите свой любимый кофе</h2>
 
-<article>
-<h3>Revo Morning</h3>
-<p>
-Лёгкий и&nbsp;мягкий вкус для спокойного начала дня. Этот текст служит
-описанием одной из&nbsp;позиций в&nbsp;линейке продуктов.
-</p>
-</article>
+        <div class="favorite__grid">
+          <article class="card">
+            <h3 class="card__title">Revo Morning</h3>
+            <p class="card__text">
+              Лёгкий и&nbsp;мягкий вкус для спокойного начала дня. Этот текст служит
+              описанием одной из&nbsp;позиций в&nbsp;линейке продуктов.
+            </p>
+          </article>
 
-<article>
-<h3>Revo Everyday</h3>
-<p>
-Сбалансированный кофе на&nbsp;каждый день. Текст-рыба имитирует краткое
-описание вкусового профиля и&nbsp;назначения напитка.
-</p>
-</article>
+          <article class="card">
+            <h3 class="card__title">Revo Everyday</h3>
+            <p class="card__text">
+              Сбалансированный кофе на&nbsp;каждый день. Текст-рыба имитирует краткое
+              описание вкусового профиля и&nbsp;назначения напитка.
+            </p>
+          </article>
 
-<article>
-<h3>Revo Origin</h3>
-<p>
-Акцент на&nbsp;особенностях конкретного региона выращивания. Здесь можно было&nbsp;бы
-рассказать о&nbsp;нотках вкуса и&nbsp;аромате, характерных для этого сорта.
-</p>
-</article>
+          <article class="card">
+            <h3 class="card__title">Revo Origin</h3>
+            <p class="card__text">
+              Акцент на&nbsp;особенностях конкретного региона выращивания. Здесь можно было&nbsp;бы
+              рассказать о&nbsp;нотках вкуса и&nbsp;аромате, характерных для этого сорта.
+            </p>
+          </article>
 
-<article>
-<h3>Revo Strong</h3>
-<p>
-Насыщенный и&nbsp;крепкий кофе для тех, кто любит яркие впечатления. Текст
-помогает оценить, как будет смотреться карточка товара с&nbsp;описанием.
-</p>
-</article>
-</section>
+          <article class="card">
+            <h3 class="card__title">Revo Strong</h3>
+            <p class="card__text">
+              Насыщенный и&nbsp;крепкий кофе для тех, кто любит яркие впечатления. Текст
+              помогает оценить, как будет смотреться карточка товара с&nbsp;описанием.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section id="giftset">
-<h2>Подарочные наборы</h2>
-<p>
-В&nbsp;этом разделе уместно разместить текст о&nbsp;готовых наборах, вариантах упаковки
-и&nbsp;поводов для подарка. Данный абзац&nbsp;&mdash; демонстрационный и&nbsp;используется как
-заполнитель контента.
-</p>
-</section>
+    <section class="section giftset" id="giftset">
+      <div class="section__inner container">
+        <h2 class="section__title">Подарочные наборы</h2>
+        <article class="card">
+          <p class="card__text">
+            В&nbsp;этом разделе уместно разместить текст о&nbsp;готовых наборах, вариантах упаковки
+            и&nbsp;поводов для подарка. Данный абзац&nbsp;&mdash; демонстрационный и&nbsp;используется как
+            заполнитель контента.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<section id="combo">
-<h2>Комбо-наборы</h2>
+    <section class="section combo" id="combo">
+      <div class="section__inner container">
+        <h2 class="section__title">Комбо-наборы</h2>
 
-<article>
-<h3>Revo Strong Combo</h3>
-<p>
-Набор для любителей крепкого кофе: несколько позиций с&nbsp;насыщенным вкусом.
-Текст служит примером описания преимуществ такого предложения.
-</p>
-</article>
+        <div class="combo__grid">
+          <article class="card">
+            <h3 class="card__title">Revo Strong Combo</h3>
+            <p class="card__text">
+              Набор для любителей крепкого кофе: несколько позиций с&nbsp;насыщенным вкусом.
+              Текст служит примером описания преимуществ такого предложения.
+            </p>
+          </article>
 
-<article>
-<h3>Revo Everyday Combo</h3>
-<p>
-Универсальный набор на&nbsp;каждый день. Здесь можно указать количество
-упаковок, предполагаемый срок использования и&nbsp;другие детали.
-</p>
-</article>
+          <article class="card">
+            <h3 class="card__title">Revo Everyday Combo</h3>
+            <p class="card__text">
+              Универсальный набор на&nbsp;каждый день. Здесь можно указать количество
+              упаковок, предполагаемый срок использования и&nbsp;другие детали.
+            </p>
+          </article>
 
-<article>
-<h3>Revo Honey Combo</h3>
-<p>
-Мягкий кофе с&nbsp;лёгкими сладкими нотами. Этот фрагмент текста показывает,
-как может выглядеть короткое маркетинговое описание продукта.
-</p>
-</article>
-</section>
+          <article class="card">
+            <h3 class="card__title">Revo Honey Combo</h3>
+            <p class="card__text">
+              Мягкий кофе с&nbsp;лёгкими сладкими нотами. Этот фрагмент текста показывает,
+              как может выглядеть короткое маркетинговое описание продукта.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-<h2>Контакты</h2>
-<p>Email: info@revo.coffee</p>
-<p>Телефон: +7 (900) 123-45-67</p>
-</section>
+    <section class="section contact" id="contact">
+      <div class="section__inner container contact__info">
+        <h2 class="section__title">Контакты</h2>
+        <p>Email: info@revo.coffee</p>
+        <p>Телефон: +7 (900) 123-45-67</p>
+      </div>
+    </section>
 
-</main>
+  </main>
 
-<footer>
-<p>&copy;&nbsp;Revo Coffee, учебный проект, 2025&nbsp;год.</p>
-</footer>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy;&nbsp;Revo Coffee, учебный проект, 2025&nbsp;год.</p>
+    </div>
+  </footer>
 
 </body>
+
 </html>
