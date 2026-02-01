@@ -221,3 +221,71 @@ body {
   font-size: 14px;
   color: #777;
 }
+@media (max-width: 768px) {
+  /* Показываем гамбургер */
+  .menu-toggle {
+    display: flex; 
+  }
+
+  /* Навигация */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 80px 30px 30px;
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  /* Когда меню открыто */
+  .nav.active {
+    right: 0;
+  }
+
+  /* Стили для списка меню */
+  .nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav__link {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+    background: var(--color-primary);
+    color: white;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .header__inner {
+    padding: 15px 0;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .header__cta {
+    display: none; 
+  }
+}
