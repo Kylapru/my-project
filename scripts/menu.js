@@ -1,8 +1,17 @@
-const menuToggle = document.getElementById('menuToggle');
-const nav = document.querySelector('.nav');
 
-menuToggle.addEventListener('click', () => {
-  nav.classList.toggle('active');
-  const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', !expanded); 
+const scrollTopButton = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollTopButton.classList.add('visible'); 
+  } else {
+    scrollTopButton.classList.remove('visible'); 
+  }
+});
+
+scrollTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' 
+  });
 });
